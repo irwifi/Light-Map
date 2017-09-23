@@ -39,18 +39,25 @@
   padding: 0;
 }
 
-#info_pos {
+#zoom {
   position: fixed;
-  bottom: 0;
-  left:0;
-  padding: 2px 10px;
-  margin: 3px;
-  font-size: 12px;
-  background: #cacaca;
+  top: 0;
+  right:0;
+  padding: 6px 10px;
+  margin: 6px;
+  font-size: 18px;
+  background: #DDD;
   border: 1px solid #a6a6a6;
-  border-radius: 3px
+  border-radius: 6px
 }
 
+#zoom div {
+  cursor: pointer;
+}
+#zoom .zoom- {
+  margin-top: -10px;
+  padding-bottom: 6px;
+}
 #info_pos div {
   display: inline-block;
   cursor: pointer;
@@ -121,18 +128,37 @@
 .info_box {
   display: none;
   position: absolute;
-  background: #013248;
-  opacity: 0.82;
-  padding: 0.6% 0.2%;
-  width: 20%;
-  height: 55%;
-  border: 1px solid #01202e;
-  border-radius: 1.5%;
-  color: #FEFEFE;
-  text-align: center;
-  font-size: 0.8vw;
+  background: #FFF;
+  opacity: 0.94;
+  padding: 2%;
+  width: 23%;
+  height: 30%;
+  border: 1px solid #EEE;
+  border-radius: 6%;
+  color: #333;
+  text-align: left;
+  font-size: 2vw;
   bottom: 0;
   right: 0;
+}
+
+.info_box  .info_name {
+  float: left;
+  width: 50%;
+}
+
+.info_box  .info_photo {
+  float: right;
+  width: 40%;
+  height: 92%;
+  border: 1px solid;
+}
+
+.info_box .info_more {
+  width: 40%;
+  background: #167061;
+  color:#FFF;
+  padding: 6% 8%;
 }
 
 .bright_grey {

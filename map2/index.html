@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virginia  Map</title>
+
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="container-fluid main_container">
+      <div class="map_container">
+        <div w3-include-html="img/map.svg"></div>
+
+        <div class="info_box">
+          <div class="area_name"></div>
+          <div class="bright_grey">Average Rental Price</div>
+
+          <ul>
+            <li>Studio <span class="area_studio"></span></li>
+            <li>1 Bedroom <span class="area_bed1"></span></li>
+            <li>2 Bedrooms <span class="area_bed2"></span></li>
+            <li>3 Bedrooms <span class="area_bed3"></span></li>
+            <li>4 Bedrooms <span class="area_bed4"></span></li>
+            <li>5 Bedrooms <span class="area_bed5"></span></li>
+          </ul>
+
+          <div class="stats area_vacancy">
+            Real-Time Vacancy Rate
+            <span></span>
+          </div>
+          <div class="stats area_income">
+            Median Household Income
+            <span></span>
+          </div>
+          <div class="stats area_population">
+            Population
+            <span></span>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

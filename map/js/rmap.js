@@ -15,7 +15,7 @@ $(function() {
   $("#rmap_overlay").css({"display": "none", "position": "fixed", "top": "0", "left": "0", "width": "100vw", "height": "100vh", "background": "#000", "opacity": "0.85", "z-index": "999990", "overflow": "hidden"});
   $("#rmap_close").css({"display": "none", "position": "fixed", "top": "10px", "right": "10px", "color": "#FFF", "font-famly": "", "font-size": "60px", "font-weight": "bold", "cursor": "pointer"});
   $(".map_wrapper").css({"z-index": "999991"});
-  $("#rmap_iframe").css({"width": iframe_width + "px", "height": iframe_height + "px"});
+  $("#rmap_iframe").css({"width": iframe_width + "px", "height": iframe_height + "px", "border": "2px solid #5e8ea9", "border-radius": "8px"});
   $("#rmap_popup").css({"cursor": "pointer", "text-decoration": "underline", "text-align": "right", "margin-top": "4px", "font-size": "12px", "color": "#368"}).on("click", rmap_popup);
   $("#rmap_close").on("click", rmap_unpop);
 });
@@ -27,7 +27,7 @@ function rmap_popup() {
 
   let iwidth = window.innerWidth * 0.9;
   let iheight = window.innerHeight * 0.9;
-  let width_height = full_size_aspect_ratio(iwidth, iheight);
+  let width_height = map_full_size_aspect_ratio(iwidth, iheight);
   iwidth = (width_height[0] / window.innerWidth) * 100;
   iheight = (width_height[1] / window.innerHeight) * 100;
 
@@ -43,7 +43,8 @@ function rmap_unpop() {
   $("#rmap_iframe").css({"width": iframe_width + "px", "height": iframe_height + "px", "margin-top": "0"});
 }
 
-function full_size_aspect_ratio(iwidth, iheight, dwidth = 16, dheight = 9) {
+function map_full_size_aspect_ratio(iwidth, iheight) {
+  let dwidth = 16, dheight = 9;
   if(iheight >= (iwidth * dheight) / dwidth) {
     iheight = (iwidth * dheight) / dwidth;
   } else {

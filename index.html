@@ -5,6 +5,7 @@
     <title>Light Map</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,16 +26,29 @@
                 <div class="main">
                     <img src="./public/img/banner.png">
                     <p class="banner">highly customizable & easily integrable <br/> Interactive Map</p>
-                    <!-- <script id="map_hook" data-width="1400" data-map_location="https://map-infographics.herokuapp.com/map/" src="https://map-infographics.herokuapp.com/map/js/rmap.js"></script> -->
+
+                  <div class="map_title">Boston Map</div>
+                    <div>
+                        <script id="map_hook" data-width="1200" data-map_location="http://localhost/projects/Light Map/map/" src="http://localhost/projects/Light Map/map/js/rmap.js"></script>
+                        <!-- <script id="map_hook" data-width="1200" data-map_location="https://light-map.herokuapp.com/map/" src="https://light-map.herokuapp.com/map/js/rmap.js"></script> -->
+                    </div>
+
+                    <div class="breaker"></div>
+
+                  <div class="map_title">Virginia Map</div>
+                    <div>
+                        <script id="map2_hook" data-width="1200" data-map_location="http://localhost/projects/Light Map/map2/" src="http://localhost/projects/Light Map/map2/js/rmap.js"></script>
+                        <!-- <script id="map_hook" data-width="1200" data-map_location="https://light-map.herokuapp.com/map2/" src="https://light-map.herokuapp.com/map2/js/rmap.js"></script> -->
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="see">
             <div class="wrapper980">
-                <div class="divtitle">Example</div>
+                <div class="divtitle">Integration</div>
                 <p>Integrate the map with single line of code</p>
-                <p>&ltscript id="map_hook" data-width="1400" data-map_location="https://map-infographics.herokuapp.com/map/" src="https://map-infographics.herokuapp.com/map/js/rmap.js"> &lt/script></p>
+                <p>&ltscript id="map_hook" data-width="1200" data-map_location="https://map-infographics.herokuapp.com/map/" src="https://map-infographics.herokuapp.com/map/js/rmap.js"&gt &lt/script&gt</p>
             </div>
         </div>
 
@@ -94,7 +108,7 @@
             <div class="wrapper980">
                 <ul class="footnotes">
                     <li class="lt">
-                        <div><img src="./public/img/lt.png">
+                        <img src="./public/img/lt.png">
                     </li>
                 </ul>
             </div>
